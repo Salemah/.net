@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Addd";
+}
+
+<h2>Addd</h2>
+<form action="" method="post">
+    <input type="text" name="Name" class="form-control" placeholder="Name" />
+    @Html.ValidationMessage("Name", new { @class = "text-danger" })<br>
+    <input type="text" name="Id" class="form-control" placeholder="Id" />
+    @Html.ValidationMessage("Id", new { @class = "text-danger" })<br>
+    <input type="date" name="Dob" " class="form-control" placeholder="Dob" />
+    @Html.ValidationMessage("Dob", new { @class = "text-danger" })<br>
+    <input type="text" name="Email" class="form-control" placeholder="email" />
+    @Html.ValidationMessage("Email", new { @class = "text-danger" })<br>
+    <select name="Department">
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="BBA">BBA</option>
+        <option value="LAW">LAW</option>
+    </select><br>
+    @Html.ValidationMessage("Department", new { @class = "text-danger" })<br>
+    <input type="submit" value="Create" />
+</form>
